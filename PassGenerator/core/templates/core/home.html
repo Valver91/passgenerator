@@ -1,0 +1,32 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero">
+    <div class="hero-content">
+        <div class="right">
+
+            {% if codigo %}
+                <p>El código es: <b>{{codigo}}</b></p>
+            {% endif %}
+
+            <form action="/generar/" method="POST">
+                {% csrf_token %}
+                <h3>Seleccione los caractéres deseados:</h3>
+                <p class="lenght">Longitud: {{form.pws_lenght}}</p>
+                {{form.letters}}
+                <label for="leters">Letras mayúsculas y minúsculas</label><br>
+                {{form.numbers}}
+                <label for="numbers">Números</label></br>
+                {{form.spec_chars}}
+                <label for="char_esp">Caractéres especiales</label></br>
+                <input type="submit" class="btn" value="Generar">
+            </form>
+            
+        </div>
+        <div class="left">
+            <img src="{% static 'core/images/password-lock.png' %}" width="40%"/>
+        </div>
+    </div>
+</div>
+{% endblock %}

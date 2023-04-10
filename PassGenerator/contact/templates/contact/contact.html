@@ -1,0 +1,36 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="hero contact">
+    <div class="hero.content contact">
+        <div class="left contact">
+            <br><br><br><br>
+            <h1>Trabajemos juntos :)</h1>
+            <p>Le daremos las opciones que mas le puedan ayudar.</p>
+            <br><br>
+        </div>
+        <div id="contacto" class="right contact">
+
+            {% if 'ok' in request.GET %}
+            <p><b>Su mensaje se ha enviado correctamente.</b></p>
+            <p><b>En breve me pondré en contacto con usted.</b></p>
+            {% endif %}
+
+            {% if 'fail' in request.GET %}
+            <p><b>Algo no ha ido bien.</b></p>
+            {% endif %}
+
+            <form method="post" 
+            action="">
+                {% csrf_token %}
+                <table>
+                    {{form.as_table}}
+                </table>
+                <input type="submit" value="Enviar" class="btn full-width"/>
+            </form>
+            <br><br><br><br>
+        </div>
+    </div>
+</div>
+{% endblock %}
