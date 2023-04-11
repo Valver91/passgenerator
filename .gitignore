@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+__init__.py
+migrations/
+
+passgenerator/settings.py
 
 # C extensions
 *.so
