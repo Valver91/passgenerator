@@ -10,3 +10,6 @@ Otra habilidad que he desarrollado en este proyecto es la creación de vistas en
 Por último, también he aprendido a crear formularios en Django. Los formularios son una parte importante de cualquier aplicación web, ya que permiten a los usuarios enviar datos al servidor. He aprendido a definir formularios personalizados y a trabajar con los datos enviados por el usuario para realizar operaciones en el servidor.
 
 En definitiva, el proyecto Passgenerator me ha permitido adquirir habilidades valiosas para el desarrollo de aplicaciones web en Python utilizando el framework Django. Desde la creación de proyectos y APP's, hasta la definición de vistas y formularios, he aprendido a trabajar con las herramientas necesarias para desarrollar aplicaciones web robustas y escalables.
+
+
+Las instrucciones son muy intuitivas. En primer lugar, debes elegir la longitud de la contraseña deseada. A continuación, selecciona los elementos que quieres que contenga la contraseña. Finalmente, haz clic en el botón "Generar" y la contraseña aparecerá en la parte superior.
